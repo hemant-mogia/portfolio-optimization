@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs and debug
+*.log
+
+# Output files (PDFs, plots, results)
+# outputs/*.pdf
+# outputs/*.png
+# outputs/*.jpg
+# outputs/plots/
+# outputs/reports/
+# outputs/results/
+# outputs/*.csv
+# outputs/*.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Python cache and metadata
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Testing and coverage
+.coverage
+.tox/
+.nox/
+.cache/
+pytest_cache/
+
+# MyPy and other tooling
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# Mac-specific
+*.DS_Store
+
+# Windows-specific
+ehthumbs.db

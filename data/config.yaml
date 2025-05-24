@@ -1,0 +1,47 @@
+# config.yaml
+
+data:
+  raw_prices_path: "data/raw/prices.csv"
+  processed_prices_path: "data/processed/prices_clean.csv"
+  returns_path: "data/processed/returns.csv"
+
+outputs:
+  base_dir: "outputs"
+  optimized_weights: "outputs/optimized_weights.csv"
+  expected_returns: "outputs/expected_returns.csv"
+  covariance_matrix: "outputs/covariance_matrix.csv"
+  portfolio_returns: "outputs/portfolio_returns.csv"
+  efficient_frontier_plot: "outputs/efficient_frontier.png"
+  weights_bar_plot: "outputs/weights_bar.png"
+  cumulative_returns_plot: "outputs/cumulative_returns.png"
+  backtest_report: "outputs/backtest_report.csv"
+  run_log: "outputs/run_log.txt"
+
+optimization:
+  weight_bounds:
+    lower: 0
+    upper: 1
+  frequency_trading_days: 252
+  solver: "ECOS"
+
+backtest:
+  risk_free_rate: 0.02
+  rebalance_frequency_days: 21
+
+plotting:
+  figsize: [10, 6]
+  dpi: 150
+  style: "seaborn-darkgrid"
+  
+tickers:
+  - AAPL
+  - MSFT
+  - GOOGL
+  - AMZN
+  - META
+
+
+
+data_source:
+  start_date: "2018-01-01"
+  end_date: null  # or "2024-12-31"
